@@ -678,7 +678,7 @@
 
             $.ajax({
                 type: "post",
-                url: "https://futures.test.hellorong.io/apis/index/testcurl",
+                url: "https://testcefa.qimiaoxue.com/apis/index/testcurl",
                 data: {'url': TTTYOBJ.getKdataUrl + TTTYOBJ.symbol + '0'},
                 success: function (res) {
                     // console.log('success', res);
@@ -978,7 +978,7 @@
 
                 $.ajax({
                     type: "post",
-                    url: "https://futures.test.hellorong.io/apis/index/testcurl/getparams",
+                    url: "https://testcefa.qimiaoxue.com/apis/index/testcurl/getparams",
                     data: {'pk': pkParam},
                     success: function (res) {
                         console.log('checkPkParam', res);
@@ -1254,13 +1254,13 @@
                 }
                 $.ajax({
                     type: "post",
-                    url: "https://futures.test.hellorong.io/apis/index/testcurl/setparams",
+                    url: "https://testcefa.qimiaoxue.com/apis/index/testcurl/setparams",
                     data: _postParam,
                     success: function (res) {
                         console.log('btn-req-p', res);
                         if (res && res != 'null') {
                             $('.pk-wrap').show();
-                            $('.pk-url-value').val('速来PK: https://hello-rong.gitee.io/web/wind-k-test.html?pk=' + res);
+                            $('.pk-url-value').val('速来PK: https://www.huimai.tech/wind-art.html?pk=' + res);
                             $('.pk-url-value').select();
                             var _copyRet = document.execCommand('copy');
                             if (_copyRet) {
